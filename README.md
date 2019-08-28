@@ -146,7 +146,7 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
     public void onComplete() {}
 }
 
-_以外发现抽象方法还可以像接口一样回调_
+_意外发现抽象方法还可以像接口一样回调_  （也可以对接口封装，Action1也可以写成interface,然后extends Observer）
     
 ### 使用场景
     
