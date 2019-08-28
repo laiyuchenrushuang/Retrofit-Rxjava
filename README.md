@@ -18,7 +18,7 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
 
 ##### 1、创建 Observer
 
-    Observer 即观察者，它决定事件触发的时候将有怎样的行为。 RxJava 中的 Observer 接口的实现方式：
+`Observer 即观察者，它决定事件触发的时候将有怎样的行为。 RxJava 中的 Observer 接口的实现方式：`
     
     //创建一个下游  观察者Observer
     Observer<Integer> observer = new Observer<Integer>() {
@@ -42,8 +42,8 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
             Log.d(TAG, "complete");
         }
     };
-
-    `除了 Observer 接口之外，RxJava 还内置了一个实现了 Observer 的抽象类：Subscriber。 Subscriber 对 Observer 接口进行了一些扩展，但他们的基本使用方式是完全一样的：`  
+    
+`除了 Observer 接口之外，RxJava 还内置了一个实现了 Observer 的抽象类：Subscriber。 Subscriber 对 Observer 接口进行了一些扩展，但他们的基本使用方式是完全一样的：`  
     
     Subscriber<String> subscriber = new Subscriber<String>() {
     @Override
@@ -84,7 +84,7 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
   //建立连接  
   observable.subscribe(observer);
   
-### 简洁表达式
+##### 简洁表达式
 
   由于是建造者模式，上面的三个步骤 可以整合成更简洁的表达语句。
   
@@ -111,6 +111,7 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
         });
     }
     
+### 使用场景
     
     
     
