@@ -84,9 +84,9 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
   //建立连接  
   observable.subscribe(observer);
   
-##### 简洁表达式
+##### 4、简洁表达式
 
-  由于是建造者模式，上面的三个步骤 可以整合成更简洁的表达语句。
+`由于是建造者模式，上面的三个步骤 可以整合成更简洁的表达语句。`
   
         Observable.create(new ObservableOnSubscribe<String>() {
             @Override
