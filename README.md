@@ -129,7 +129,7 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
     
 ----------------------------------------------------------------
 
-   abstract class Action1 implements Observer {
+    abstract class Action1 implements Observer {
     abstract void call(Throwable o);
     @Override
     public void onSubscribe(Disposable d) {}
