@@ -147,6 +147,11 @@ onError(): 事件队列异常。在事件处理过程中出异常时，onError()
 }
 
 _意外发现抽象方法还可以像接口一样回调_  （也可以对接口封装，Action1也可以写成interface,然后extends Observer->  实现类写个父类去实现不关注的接口，子类去实现目标接口，完毕）
+
+___备注___
+
+    implementation "io.reactivex.rxjava2:rxjava:2.2.1" // 必要rxjava2依赖
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.0" // 必要rxandrroid依赖，切线程时需要用到
     
 ### 使用场景
     
